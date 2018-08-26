@@ -1,0 +1,105 @@
+{
+  "name": "acebot",
+  "description": "AceBot is a Discord bot designed for providing information on demand.",
+  "version": "3.5.0",
+  "author": {
+    "name": "Aceheliflyer",
+    "email": "aceheliflyer@gmail.com",
+    "url": "http://github.aceheliflyer.org"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:shard": "node sharder.js",
+    "start:dev": "nodemon index.js",
+    "start:dev-shard": "nodemon sharder.js",
+    "install:dev": "npm i --only=dev",
+    "lint:all": "standard --verbose | snazzy && markdownlint *",
+    "lint:js": "standard --verbose | snazzy",
+    "lint:js-fix": "standard --verbose --fix | snazzy",
+    "lint:md": "markdownlint *",
+    "commitmsg": "commitplease .git/COMMIT_EDITMSG",
+    "precommit": "npm run lint:js",
+    "prepush": "npm run lint:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/Aceheliflyer/AceBot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "discord.js-commando"
+  ],
+  "bugs": {
+    "url": "http://github.com/Aceheliflyer/AceBot/issues"
+  },
+  "homepage": "http://github.aceheliflyer.org/AceBot",
+  "homepageGithub": "http://github.com/Aceheliflyer/AceBot#readme",
+  "homepageTrello": "http://trello.com/b/YU3307Hi",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "columnify": "^1.5.4",
+    "common-tags": "^1.7.2",
+    "discord.js": "github:hydrabolt/discord.js",
+    "discord.js-commando": "github:gawdl3y/discord.js-commando",
+    "discord.js-commando-mysqlprovider": "^0.1.0",
+    "get-age": "^1.0.1",
+    "is-hex": "^1.1.3",
+    "js-yaml": "^3.11.0",
+    "moment": "^2.21.0",
+    "moment-duration-format": "^2.2.2",
+    "moment-timezone": "^0.5.14",
+    "mysql2": "^1.5.3",
+    "os-utils": "0.0.14",
+    "pluralize": "^7.0.0",
+    "raven": "^2.4.2",
+    "sqlite": "^2.9.1",
+    "standard": "^11.0.1",
+    "url-regex": "^4.1.1"
+  },
+  "devDependencies": {
+    "commitplease": "^3.2.0",
+    "husky": "^0.14.3",
+    "markdownlint": "^0.8.1",
+    "nodemon": "^1.17.2",
+    "snazzy": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "commitplease": {
+    "style": "jquery",
+    "component": true,
+    "components": [
+      "Assets",
+      "Botlist",
+      "ClientEvents",
+      "Commands",
+      "Comments",
+      "Config",
+      "Core",
+      "Docs",
+      "Events",
+      "Feature",
+      "Fix",
+      "Index",
+      "Lint",
+      "Modules",
+      "Package",
+      "Packages",
+      "ProcessEvents",
+      "Release",
+      "Sentry",
+      "Support",
+      "Travis"
+    ],
+    "limits": {
+      "firstLine": "72",
+      "otherLine": "80"
+    },
+    "nohook": true
+  }
+}

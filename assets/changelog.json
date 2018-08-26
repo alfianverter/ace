@@ -1,0 +1,160 @@
+{
+  "releases": [
+    {
+      "version": "3.5.0",
+      "released": "2018-04-08",
+      "types": {
+        "added": [
+          "Start scripts for for both Windows and Linux.",
+          "New event loader.",
+          "New module loader.",
+          "New configuration loader.",
+          "New permission system.",
+          "`liststaff` command to list the current bot staff with their position and status.",
+          "Add `traceback` command to get the most recent error.",
+          "Add `update-changelog.js` and replace `update-authors.sh` with `update-authors.js`.",
+          "Add `discrim` and `throwerror` command.",
+          "New game rotation and selection system."
+        ],
+        "changed": [
+          "Moved core parts of the bot to `./src` folder.",
+          "Organized `index.js` file.",
+          "`userinfo` command show's the user's identity instead of if they're a bot or not.",
+          "Rewrote entire logger module.",
+          "The bot now follows the bot's settings instead of the configuration settings.",
+          "Reworked the `profile` command code.",
+          "The `profile` command now defaults to the person who ran the command.",
+          "The `tunnel` command supports DMs now."
+        ],
+        "deprecated": [],
+        "removed": [
+          "Bot owners are no longer in the configuration file."
+        ],
+        "fixed": [
+          "Fixed `serverinfo` command now showing owner.",
+          "Fixed random credits in `listservers` and `listchannels`.",
+          "Fixed sharder not working.",
+          "`discrim` command now works without error."
+        ],
+        "security": []
+      }
+    },
+    {
+      "version": "3.4.0",
+      "released": "2018-03-16",
+      "types": {
+        "added": [
+          "New dynamic config loading system.",
+          "`inviteinfo` to get information on an invite.",
+          "`getcommand` command for viewing a command's code.",
+          "`shardstats` command to view stats on each shard.",
+          "`seen` command to see when a user was last seen in a server.",
+          "`listservers` and `listchannels`, these commands are self explanatory.",
+          "Bot now sends a message when it joins a new guild.",
+          "New MySQL support, you can now toggle between MySQL and SQLite.",
+          "New profile system, users can now have a custom profile.",
+          "Added lockdown system, you can now lockdown the bot with a provided reason.",
+          "Added tunnel ssystem, send and receive messages from any channel the bot has access to."
+        ],
+        "changed": [
+          "Contributors get their own file.",
+          "`eval` command shows information on functions.",
+          "`stats` command is more efficient.",
+          "`eval` and `exec` now work properly when using the `--silent` argument.",
+          "Anything that used `.find('id', ID)` now uses `.get(ID)`.",
+          "Commands are now organized properly."
+        ],
+        "deprecated": [],
+        "removed": [],
+        "fixed": [
+          "Fixed bold text in `info` command.",
+          "Fixed bot not shutting down properly."
+        ],
+        "security": []
+      }
+    },
+    {
+      "version": "3.3.0",
+      "released": "2018-02-25",
+      "types": {
+        "added": [
+          "Added Trello to package.json.",
+          "Support for Sentry error logging with tags and release tracking.",
+          "Style sheet for commands.",
+          "New `channelinfo` command.",
+          "Added `AUTHORS.md` file generator.",
+          "New `settz` and `time` commands for setting and retrieving user's time zones. *(Includes custom group.)*",
+          "Added lint command for linting code in the JavaScript Standard Style."
+        ],
+        "changed": [
+          "Embed colors for some commands are now dynamic.",
+          "All commands that use embeds to use `message.embed()`.",
+          "Updated all package versions.",
+          "`discordstatus` command uses Statuspage API.",
+          "Practically rewrote status and info commands respectively.",
+          "Improved help documentation.",
+          "Merged `repostatus` and `buildstatus` into `repo` command.",
+          "Better module management."
+        ],
+        "deprecated": [],
+        "removed": [
+          "Removed `.gitattributes`.",
+          "Fixed `README.md` consistency."
+        ],
+        "fixed": [
+          "Prefix command is now guarded."
+        ],
+        "security": []
+      }
+    },
+    {
+      "version": "3.2.0",
+      "released": "2018-02-09",
+      "types": {
+        "added": [
+          "Added changelog for keeping track of changes.",
+          "Added detailed JSDocs to source.",
+          "Added comments to config files.",
+          "Added AceBot logo as an asset.",
+          "Added commit linting in jQuery style.",
+          "The application owner is automatically set as the owner."
+        ],
+        "changed": [
+          "Changed config file extensions from `.yaml` to `.yml`.",
+          "Improved `README.md` documentation.",
+          "Switched from `remark` to `markdownlint`.",
+          "`LICENSE.md` is now `LICENSE.txt`.",
+          "Improved `CONTRIBUTING.md` file.",
+          "Removed unused async.",
+          "Restart command now restarts all shards.",
+          "Improved information in commands."
+        ],
+        "deprecated": [],
+        "removed": [],
+        "fixed": [
+          "Fixed broken links in `README.md`.",
+          "Fixed config file issues."
+        ],
+        "security": []
+      }
+    },
+    {
+      "version": "3.1.0",
+      "released": "2018-01-27",
+      "types": {
+        "added": [
+          "Added `gitstatus` and `buildstatus` to retrieve information on AceBot from respective websites.",
+          "Added `gitstatus` command.",
+          "Added `buildstatus` command."
+        ],
+        "changed": [
+          "Fixed style error in the `discordstatus` command."
+        ],
+        "deprecated": [],
+        "removed": [],
+        "fixed": [],
+        "security": []
+      }
+    }
+  ]
+}
